@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 5%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+}
+.social-media {
+    margin: 0 auto 0 50px;
+}
+.social-media a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-right: 10px;
+    transition: 0.5s;
+}
+.social-media a:hover {
+    background-color: #fff;
+}
+.social-media a i {
+    font-size: 20px;
+    color: #fff;
+    transition: 0.5s;
+}
+.social-media a:hover i {
+    color: #444;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+}
+.silder .slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.slide img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+    opacity: 0;
+    transition: .3s ease;
+}
+.slide.active img {
+    opacity: 1;
+}
+.navigation {
+    position: absolute;
+    bottom: 8%;
+    right: 5%;
+    z-index: 99;
+}
+@media (max-width:768px) {
+    .navigation  {
+        margin-right: 110px;
+    }
+}
+.navigation span {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    box-shadow: 0 0 10 rgba(0, 0, 0, .5);
+    cursor: pointer;
+    margin-left: 25px;
+    transition: .5s;
+}
+.navigation span:nth-child(1) {
+    background: transparent;
+}
+.navigation span:nth-child(1):hover {
+    background: #fff;
+}
+.navigation span i {
+    font-size: 45px;
+    color: #444;
+    transition: .5s;
+}
+.navigation span:nth-child(1) i {
+    color: #fff;
+}
+.navigation span:nth-child(1):hover i {
+    color: #444;
+}
+@media (min-width: 768px) {
+    .mainn-1{
+        z-index: 5;
+    }
+}
